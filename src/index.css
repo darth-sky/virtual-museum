@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Warna gelap untuk latar museum dan aksen emas/tembaga untuk elemen penting */
+  --color-museum-dark: #121212;
+  --color-museum-gray: #242424;
+  --color-museum-gold: #d4af37;
+  --color-museum-copper: #b87333;
+}
+
+body {
+  background-color: var(--color-museum-dark);
+  color: white;
+  margin: 0;
+  overflow: hidden; /* Mencegah scroll */
+  font-family: ui-sans-serif, system-ui, sans-serif;
+}
