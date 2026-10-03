@@ -1,16 +1,16 @@
 import React from 'react';
-import { useGLTF, Clone, Center } from '@react-three/drei';
+import { useFBX, Clone, Center } from '@react-three/drei';
 
-export default function ArtifactModel({ modelPath, onInteract }) {
-  const { scene } = useGLTF(modelPath);
+export default function ArtifactModel({ modelPath, scale = 0.01, onInteract }) {
+  // Menggunakan useFBX untuk memuat format .fbx
+  const fbx = useFBX(modelPath);
 
   return (
-    // Komponen Center membungkus model dan secara paksa menaruh titik poros (pivot) 
-    // tepat di tengah-tengah dimensi fisik si topeng
     <Center>
       <Clone 
-        object={scene} 
+        object={fbx} 
         deep 
+        scale={scale} // Menyesuaikan skala FBX yang biasanya sangat besar
         onClick={(e) => {
           e.stopPropagation();
           onInteract();
@@ -21,3 +21,15 @@ export default function ArtifactModel({ modelPath, onInteract }) {
     </Center>
   );
 }
+
+// Preload seluruh 10 file FBX karakter Ramayana
+useFBX.preload('/models/ANGGADA low.fbx');
+useFBX.preload('/models/dewi sita low.fbx');
+useFBX.preload('/models/hanoman low.fbx');
+useFBX.preload('/models/jatayu low.fbx');
+useFBX.preload('/models/kumbakarna low.fbx');
+useFBX.preload('/models/patih prahasta low.fbx');
+useFBX.preload('/models/rahwana low.fbx');
+useFBX.preload('/models/rama low.fbx');
+useFBX.preload('/models/sempati low.fbx');
+useFBX.preload('/models/sugriwa low.fbx');
