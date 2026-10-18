@@ -24,14 +24,14 @@ export default function CandiKiri() {
       >
         <defs>
           <linearGradient id="gradKiri" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#0a0605" />
-            <stop offset="70%" stopColor="#2a180d" />
-            <stop offset="100%" stopColor="#4a2e14" />
+            <stop offset="0%" stopColor="#06112e" />
+            <stop offset="70%" stopColor="#0b1a47" />
+            <stop offset="100%" stopColor="#132a68" />
           </linearGradient>
         </defs>
-        <path d={CANDI_LEFT_PATH} fill="url(#gradKiri)" stroke="#d4af37" strokeWidth="2" strokeLinejoin="round" />
-        <path d="M212 40 L212 488" stroke="#f3d77a" strokeWidth="2" />
-        <path d="M18 506 H277 M32 488 H212 M44 468 H62" stroke="#d4af37" strokeOpacity="0.45" strokeWidth="1.2" />
+        <path d={CANDI_LEFT_PATH} fill="url(#gradKiri)" stroke="#c8952c" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M212 40 L212 488" stroke="#e9c46a" strokeWidth="2" />
+        <path d="M18 506 H277 M32 488 H212 M44 468 H62" stroke="#c8952c" strokeOpacity="0.45" strokeWidth="1.2" />
       </svg>
     </div>
   );

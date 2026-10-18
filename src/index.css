@@ -1,31 +1,38 @@
 @import "tailwindcss";
 
 @theme {
-  --color-museum-dark: #121212;
-  --color-museum-gray: #242424;
-  --color-museum-gold: #d4af37;
-  --color-museum-copper: #b87333;
+  --color-navy-main: #13296b;
+  --color-navy-dark: #0b1a47;
+  --color-navy-soft: #eef4fb;
+  --color-gold-main: #c8952c;
+  --color-gold-bright: #e9c46a;
+  --color-gold-bronze: #9a6b17;
+  --color-neutral-bg: #ffffff;
+  --color-neutral-secondary: #f8fafc;
+  --color-neutral-text: #1c2233;
+  --color-neutral-muted: #5f6678;
+  --color-neutral-border: #d5dbe6;
 }
 
 body {
-  background-color: var(--color-museum-dark);
-  color: white;
+  background-color: #ffffff;
+  color: #1c2233;
   margin: 0;
-  overflow-x: hidden; /* Mengizinkan scroll ke bawah, tapi mencegah scroll bocor ke samping */
+  overflow-x: hidden;
   font-family: ui-sans-serif, system-ui, sans-serif;
 }
 
-/* Kustomisasi scrollbar agar lebih elegan (Opsional) */
+/* Custom scrollbar prestige academic */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #121212; 
+  background: #f8fafc; 
 }
 ::-webkit-scrollbar-thumb {
-  background: #b87333; 
+  background: #c8952c; 
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d4af37; 
+  background: #e9c46a; 
 }
