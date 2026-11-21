@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useProgress } from "@react-three/drei";
 import ArtifactModel from "./components/ArtifactModel";
 import CandiBentar from "./components/CandiBentar";
-import { UI, JA } from "./i18n";
+import { UI, EN, JA } from "./i18n";
 
 // ================= GAYA PRESTIGE ACADEMIC NAVY & GOLD =================
 const STYLES = `
@@ -103,7 +103,10 @@ export default function App() {
   const [lang, setLang] = useState("id");
   const t = UI[lang];
   const base = collections[currentIndex];
-  const currentItem = lang === "ja" ? { ...base, ...JA[base.id] } : base;
+  const LANG_OVERRIDES = { en: EN, ja: JA };
+  const currentItem = LANG_OVERRIDES[lang]
+    ? { ...base, ...LANG_OVERRIDES[lang][base.id] }
+    : base;
   const isRama = base.kubu === "Pihak Rama";
 
   const handleNext = () => setCurrentIndex((p) => (p + 1) % collections.length);
@@ -119,6 +122,7 @@ export default function App() {
       <div className="absolute top-6 right-6 md:top-8 md:right-8 z-20 flex glass-panel-navy rounded-full overflow-hidden p-1 shadow-lg">
         {[
           ["id", "ID"],
+          ["en", "EN"],
           ["ja", "日本語"],
         ].map(([code, label]) => (
           <button

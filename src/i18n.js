@@ -14,6 +14,19 @@ export const UI = {
     no: 'No.',
     kubu: { 'Pihak Rama': 'Pihak Rama', 'Pihak Alengka': 'Pihak Alengka' },
   },
+  en: {
+    loading: 'Loading',
+    gallery: '3D Gallery',
+    sub: 'Ramayana Epic — Interactive Character Collection',
+    prev: 'Previous',
+    next: 'Next',
+    history: 'Historical Notes',
+    traits: 'Character Traits',
+    moment: 'Key Moment',
+    moral: 'Epic Moral',
+    no: 'No.',
+    kubu: { 'Pihak Rama': "Rama's Side", 'Pihak Alengka': "Alengka's Side" },
+  },
   ja: {
     loading: '読み込み中',
     gallery: '3Dギャラリー',
@@ -120,5 +133,129 @@ export const JA = {
     description: '兄ヴァーリに王座を奪われたヴァーナラの王。ラーマに助けられた恩に報いるため、猿の全軍を動員した。',
     momen: 'ラーマと同盟を結び、各地から何千ものヴァーナラを集めてシータを捜し、ランカーへ攻め込んだ。',
     pesan: '恩義と約束に根ざした同盟は、どんな軍勢よりも強い。',
+  },
+};
+
+// Terjemahan Inggris per karakter (berdasarkan id). Menimpa field teks di data asli.
+export const EN = {
+  1: {
+    title: 'Anggada',
+    julukan: 'Envoy of Peace from Kiskenda',
+    tagline: 'Once he planted one foot, no one in Alengka could budge him.',
+    watak: ['Loyal', 'Brave', 'Clever'],
+    description:
+      'Anggada is a formidable vanara (monkey warrior), son of Subali. He served as one of Sri Rama’s trusted commanders, playing a vital role in the campaign against the kingdom of Alengka.',
+    momen:
+      'Sent by Rama as an envoy to Rahwana’s court, he planted his foot firmly on the floor and challenged anyone to lift it.',
+    pesan:
+      'True strength needs no shouting. Steadfastness alone is enough to make any adversary tremble.',
+  },
+  2: {
+    title: 'Dewi Sita',
+    julukan: 'Princess of Mantili, Paragon of Devotion',
+    tagline: 'Abducted for her beauty, remembered for her steadfastness.',
+    watak: ['Pure', 'Patient', 'Steadfast'],
+    description:
+      'The wife of Sri Rama, symbolizing purity, devotion, and unwavering resolve. Rahwana’s abduction of Dewi Sita became the catalyst for the great Ramayana war.',
+    momen:
+      'Held captive in the Asoka Garden, Sita rejected every enticement from Rahwana and faithfully awaited Rama.',
+    pesan:
+      'Loyalty and dignity remain intact even when every circumstance tries to shake them.',
+  },
+  3: {
+    title: 'Hanoman',
+    julukan: 'The White Ape, Messenger of Rama',
+    tagline: 'Leapt across the ocean, set Alengka ablaze, and returned with news.',
+    watak: ['Mighty', 'Loyal', 'Humble'],
+    description:
+      'A great hero in the form of a white ape endowed with divine strength. His dedication and loyalty to Sri Rama are unmatched.',
+    momen:
+      'Captured by Rahwana’s forces with his tail set on fire, Hanoman leapt from roof to roof and set the capital of Alengka ablaze.',
+    pesan:
+      'Selfless, sincere devotion is the highest form of strength.',
+  },
+  4: {
+    title: 'Jatayu',
+    julukan: 'Garuda Guardian of Dandaka Forest',
+    tagline: 'Knowing he would lose, he chose to fight anyway.',
+    watak: ['Gallant', 'Self-Sacrificing', 'Devoted Friend'],
+    description:
+      'An ancient garuda bird and close friend of King Dasarata. Jatayu gallantly gave his life trying to rescue Dewi Sita from Rahwana’s clutches.',
+    momen:
+      'He intercepted Rahwana mid-flight as he carried Sita away. Though his wings were severed, he clung to life long enough to inform Rama.',
+    pesan:
+      'Courage is measured by the will to defend the weak, not by the odds of winning.',
+  },
+  5: {
+    title: 'Kumbakarna',
+    julukan: 'The Giant Who Defended His Homeland',
+    tagline: 'He knew his brother was wrong, yet refused to let his homeland fall alone.',
+    watak: ['Honest', 'Chivalrous', 'Conflicted'],
+    description:
+      'Rahwana’s younger brother who bore a fearsome giant form yet possessed a noble, honest warrior’s heart. He marched to battle solely to defend his homeland.',
+    momen:
+      'Awakened from his long slumber, Kumbakarna counseled Rahwana to return Sita.',
+    pesan:
+      'Love for one’s homeland does not mean justifying a leader’s wrongdoing.',
+  },
+  6: {
+    title: 'Patih Prahasta',
+    julukan: 'Grand Commander of Alengka',
+    tagline: 'Faithful to his duty, even when the cause had gone astray.',
+    watak: ['Disciplined', 'Loyal', 'Commanding'],
+    description:
+      'Rahwana’s uncle and the trusted chief minister and commander of Alengka. Even knowing his kin walked the wrong path, he remained loyal in leading the army.',
+    momen:
+      'He led the giant forces against the vanara ranks in the fierce battle at the gates of Alengka.',
+    pesan:
+      'Blind loyalty can drag even good people onto the wrong side.',
+  },
+  7: {
+    title: 'Rahwana',
+    julukan: 'Dasamuka, the Ten-Faced King',
+    tagline: 'Powerful, brilliant, and undone by his own arrogance.',
+    watak: ['Powerful', 'Arrogant', 'Ambitious'],
+    description:
+      'The ten-faced demon king (Dasamuka) of immense power. His wrath, greed, and arrogance in coveting Dewi Sita led him to total ruin.',
+    momen:
+      'He abducted Sita and rejected every counsel to return her, until he finally fell to Rama’s arrow.',
+    pesan:
+      'Intelligence and power without self-restraint lead inevitably to ruin.',
+  },
+  8: {
+    title: 'Sri Rama',
+    julukan: 'Avatar of Vishnu, Upholder of Dharma',
+    tagline: 'Willing to surrender a throne to keep his word.',
+    watak: ['Wise', 'Composed', 'Principled'],
+    description:
+      'Crown prince of Ayodhya and the central hero upholding dharma (righteousness). Armed with his sacred bow, he strives to vanquish evil.',
+    momen:
+      'He endured 14 years of exile, then led the vanara army across the sea to rescue Sita.',
+    pesan:
+      'Upholding truth often demands great personal sacrifice.',
+  },
+  9: {
+    title: 'Sempati',
+    julukan: 'The Wing-Broken Garuda',
+    tagline: 'No longer able to fly, yet his vision guided the army.',
+    watak: ['Caring', 'Vigilant', 'Wise'],
+    description:
+      'Jatayu’s elder brother who lost his wings shielding his younger sibling from the scorching sun. Sempati later provided crucial intelligence to the vanara army.',
+    momen:
+      'From a coastal cliff, he spotted Sita held captive in Alengka and showed the vanaras the direction they needed to take.',
+    pesan:
+      'Limitations never erase one’s ability to bring meaning to others.',
+  },
+  10: {
+    title: 'Sugriwa',
+    julukan: 'King of the Vanaras',
+    tagline: 'Lost his throne, then repaid a debt of gratitude with his entire army.',
+    watak: ['True to His Word', 'Strategic', 'Leader'],
+    description:
+      'King of the vanaras whose throne was usurped by his brother, Subali. After being aided by Rama, he repaid the kindness by mobilizing his entire ape army.',
+    momen:
+      'Allied with Rama, he marshaled thousands of vanaras from every corner to search for Sita and storm Alengka.',
+    pesan:
+      'An alliance built on gratitude and kept promises is stronger than any army.',
   },
 };
